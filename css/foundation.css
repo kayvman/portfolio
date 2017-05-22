@@ -22,7 +22,12 @@ html {
   -ms-text-size-adjust: 100%;
   /* 3 */
   -webkit-text-size-adjust: 100%;
-  /* 3 */ }
+  /* 3 */
+  background: url(images/soldier.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  }
 
 /* Sections
        ========================================================================== */
@@ -488,7 +493,7 @@ button {
   display: none !important; }
 
 .row {
-  max-width: 75rem;
+  max-width: 85rem;
   margin-right: auto;
   margin-left: auto; }
   .row::before, .row::after {
