@@ -1,6 +1,9 @@
 /** {
   border: 1px solid purple;
 }*/
+body {
+  height: 100%;
+}
 
 .header { 
   background-image: url(/images/beach.jpg);
@@ -27,9 +30,13 @@
   width: 100%;
   position: fixed;
   left: 50%;
-  color: #fff;
   margin-left: -50%;
   background-color: #34495E;
+}
+
+nav.scrolled {
+  margin-top: 5px;
+  background-color: #F39C12;
 }
 
 nav {
@@ -47,24 +54,34 @@ nav li {
   display: inline;
   padding: .3em .5em;
   margin: 0;
+  border-radius: 6px;
   text-shadow: 0 .5px #000;
   transition: ease 500ms;
 }
 
+nav li a {
+  color: #34495E;
+}
+
+nav li a.scrolled {
+  color: #fff;
+}
+
 nav li:hover {
-  background-color: yellow;
+  background-color: #F39C12;
 }
 
 .parallax {
-    background-image: url("/images/nebulas.jpg");
+    background-image: url("../images/nebulas.jpg");
     min-height: 300px; 
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bio {
-  background-color: #34495E;
+  /*background-color: #34495E;*/
+  background-image: url("/images/beach.jpg");
   height: 13rem;
 }
 
