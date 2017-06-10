@@ -2,12 +2,13 @@ $(document).foundation();
 $(function() {
   $(window).scroll(function() {
     var winTop = $(window).scrollTop();
-    if (winTop >= 30) {
-      $("body").addClass("sticky-shrinknav-wrapper");
+    if (winTop >= 45) {
+      $("h1:first, nav").addClass("scrolled");
     } else{
-      $("body").removeClass("sticky-shrinknav-wrapper");
+      $("h1:first, nav").removeClass("scrolled");
     }
   });
 });
+
 
 
