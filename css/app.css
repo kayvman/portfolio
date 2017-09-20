@@ -1,16 +1,15 @@
 /** {
   border: 1px solid purple;
 }*/
+
+
 body {
   height: 100%;
 }
 
 .header { 
   background-color: #F39C12;
-  /*background-image: url(/images/beach.jpg);*/
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
+  height: 185px;
   text-align: center;
 
   
@@ -19,6 +18,7 @@ body {
 .header h1{
   color: #fff;
   font-size: 5.5em;
+  z-index: 2;
   text-align: center;
   font-family: 'Archivo Black', sans-serif;
   margin-top: 10px;
@@ -36,8 +36,8 @@ body {
 }
 
 nav.scrolled {
-  /*margin-top: 5px*/
   background-color: #F39C12;
+  z-index: 3;
 }
 
 nav {
@@ -73,17 +73,29 @@ nav li:hover {
 }
 
 .parallax {
-    background-image: url("../images/nebulas.jpg");
-    min-height: 300px; 
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../images/nebulas.jpg");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover
+
+}
+.parallax p {
+  font-size: 3.4rem;
+  font-weight: bold;
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  top: 150px;
+  z-index: 1;
+
 }
 .bio {
   /*background-color: #34495E;*/
   background-image: url("/images/beach.jpg");
   height: 130em;
+  z-index: 99;
 }
 
 
@@ -100,13 +112,49 @@ nav li:hover {
 
 
 @media screen and (max-width: 39.9375em) {
-  .header h1{
-    font-size: 2.5em;
+  
+  .header {
+    height: 125px;
   }
+
+  .header h1{
+   color: #fff;
+  font-size: 2.5em;
+  z-index: 2;
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+  margin-top: 18px;
+  text-shadow: 0 6px #000;
+  transition: all ease 900ms;
+  }
+
+  .parallax p {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  top: 150px;
+  z-index: 1;
+
+}
+
+
 }
 
 @media screen and (min-width: 40em) and (max-width: 66.563em) {
+  .header {
+    height: 125px;
+  }
+
   .header h1{
-    font-size: 3.5em;
+    color: #fff;
+  font-size: 3.5em;
+  z-index: 2;
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+  margin-top: 10px;
+  text-shadow: 0 6px #000;
+  transition: all ease 900ms;
   }
 }
